@@ -1,13 +1,215 @@
-table {
-    border-collapse: collapse;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-td {
-    border: 1px solid black;
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+
+/* Paragraph styles */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 28px;
+    color: #007bff; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+
+
+
+/* Image styles */
+img {
+    width: 15%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+
+
+/* Fieldset styles */
+fieldset {
+    margin-bottom: 40px;
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Legend styles */
+fieldset legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+/* Caption styles */
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+    margin-bottom: 10px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Table header styles */
+th {
+    background-color: #f2f2f2; 
     padding: 10px;
     text-align: left;
 }
 
-caption {
+/* Table cell styles */
+td {
     padding: 10px;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Alternate row styles */
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer paragraph styles */
+footer p {
+    margin: 0;
+}
+
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Textarea styles */
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styles */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+/* Message paragraph styles */
+form p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-paragraph {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    caption {
+        font-size: 16px;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 576px) {
+    caption {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 90%; 
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    img {
+        max-width: 100%; 
+    }
 }
